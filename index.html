@@ -89,6 +89,13 @@ section { padding: 40px 0; border-top: 1px solid var(--line); }
 section > .wrap > h2 { font-size: 1.6rem; margin-bottom: 8px; }
 .sub { color: var(--muted); max-width: 64ch; margin-bottom: 28px; }
 
+/* about */
+.about { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 28px 48px; align-items: start; margin-top: 8px; }
+.about-text { display: grid; gap: 14px; max-width: 68ch; }
+.about-photo { margin: 0; }
+.about-photo img { width: 200px; height: 200px; border-radius: 50%; border: 1px solid var(--line); background: #fff; object-fit: cover; }
+.about-text p { color: var(--ink); }
+
 /* projects */
 .project { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 28px 40px; padding: 32px 0; border-top: 1px solid var(--line); }
 .project:first-of-type { border-top: 0; padding-top: 8px; }
@@ -144,6 +151,9 @@ footer p { max-width: 70ch; }
   .role { grid-template-columns: minmax(0, 1fr); }
   .intro { padding-top: 36px; }
   .nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about { grid-template-columns: minmax(0, 1fr); }
+  .about-photo { order: -1; }
+  .about-photo img { width: 140px; height: 140px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -156,6 +166,7 @@ footer p { max-width: 70ch; }
   <div class="wrap">
     <strong>Sujata Mulyana</strong>
     <nav aria-label="Sections">
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
@@ -174,6 +185,22 @@ footer p { max-width: 70ch; }
       <li><b>3 projects</b><span>with code on GitHub</span></li>
     </ul>
   </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <div class="about">
+      <div class="about-text">
+        <p>I am an Information Systems student at Universitas Multimedia Nusantara, expected to graduate in 2028, with a GPA of 3.85. This semester I am also a Laboratory Assistant for Data Analysis, helping students work through Python practicum sessions.</p>
+        <p>My projects follow one pattern: start from raw data, check it carefully, and turn it into something people can use, such as a dashboard, an automated report or a small app. I like confirming that the numbers add up before I present them.</p>
+        <p>I am looking for a data analytics internship, where I can work on dashboards, report automation and data cleaning. The best way to reach me is a message on LinkedIn.</p>
+      </div>
+      <figure class="about-photo">
+        <img src="img/foto.jpg" width="480" height="480" loading="lazy" alt="Portrait of Sujata Mulyana.">
+      </figure>
+      </div>
+    </div>
+  </section>
 
   <section id="projects">
     <div class="wrap">
@@ -340,7 +367,7 @@ footer p { max-width: 70ch; }
       <a class="primary" href="https://github.com/sujatamulyana01-max">GitHub</a>
       <a href="https://www.linkedin.com/in/sujata-mulyana/">LinkedIn</a>
     </div>
-    <p>Open to data analytics internships and freelance data projects. Send a message on LinkedIn.</p>
+    <p>Open to data analytics internships. Send a message on LinkedIn.</p>
     <p>Dashboard and report projects use the Anonymous Transactional Dataset by Mychael Maoeretz Engel, Ford Lumban Gaol, Aditya Kurniawan and Widodo Budiharto, Mendeley Data V2, DOI 10.17632/kcgf45y24m.2, licensed CC BY 4.0. The dataset authors do not endorse this work.</p>
   </div>
 </footer>

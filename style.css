@@ -43,9 +43,7 @@ nav a:hover,nav a[aria-current] { color:var(--accent); border-color:currentColor
 .hero { background:var(--surface); }
 .hero-grid { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:clamp(32px,6vw,94px); padding-block:clamp(48px,6vw,88px); }
 .eyebrow,.chart-kicker { text-transform:uppercase; font:600 .77rem/1.4 var(--mono); letter-spacing:.11em; color:var(--accent); }
-.hero-label { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
-.hero-label::before { content:''; width:34px; height:2px; background:currentColor; }
-.hero h1 { font-size:clamp(4.4rem,7.6vw,7.1rem); font-weight:650; line-height:.89; letter-spacing:-.075em; }
+.hero h1 { font-size:clamp(4.4rem,7.6vw,7.1rem); font-weight:650; line-height:1.06; letter-spacing:-.075em; }
 .hero h1 em { font-family:var(--serif); font-weight:400; color:var(--accent); letter-spacing:-.068em; }
 .lede { margin-top:24px; max-width:40ch; font-size:clamp(1.1rem,1.5vw,1.32rem); line-height:1.45; }
 .affiliation { margin-top:10px; color:var(--muted); font-size:.9rem; }
@@ -133,7 +131,7 @@ figcaption,.note { font-size:.85rem; }
 @media(max-width:700px) {
   html { scroll-padding-top:118px; }.mast-inner { flex-wrap:wrap; gap:0; padding-top:9px; }.mast nav { order:3; width:100%; justify-content:space-between; }
   .contact-link { padding:6px 12px; }.hero-grid,.about-grid,.case-grid,.cards { grid-template-columns:minmax(0,1fr); }
-  .hero-grid { gap:30px; }.hero h1 { font-size:clamp(4.4rem,17vw,6rem); }.hero-label { margin-bottom:16px; }.hero .actions { margin-top:18px; }.dashboard { padding:24px; }
+  .hero-grid { gap:30px; }.hero h1 { font-size:clamp(4.4rem,17vw,6rem); }.hero .actions { margin-top:18px; }.dashboard { padding:24px; }
   .facts { gap:10px; }.facts div { padding-left:10px; justify-content:flex-end; }.facts dt { line-height:1.35; margin-top:4px; }.facts small { display:block; }
   .cards { gap:22px; }.preview { height:clamp(160px,47vw,240px); }.card-body { padding:22px; }.portrait { max-width:180px; justify-self:start; }.role { grid-template-columns:1fr; }.credits { grid-template-columns:1fr; }.skills { gap:20px; }
 }
